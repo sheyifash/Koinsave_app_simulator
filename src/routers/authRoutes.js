@@ -6,6 +6,6 @@ const verifyOtp = require("../controllers/verifyOtp")
 const router = express.Router()
 
 router.post("/signUp", signUp)
-router.post("/login", logIn, authorization)
+router.post("/login", logIn)
 router.post("/verifyOtp", verifyOtp)
 module.exports = router
