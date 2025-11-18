@@ -5,8 +5,8 @@ const sendOtp = async(email, otp) => {
         const mailTransport = nodemailer.createTransport({
             service:"gmail",
             auth:{
-               mail:process.env.EMAIL,
-                pword:process.env.PWORD
+               user:process.env.EMAIL,
+                pass:process.env.PWORD
             }
         })
         const mailDetails = {
@@ -45,8 +45,8 @@ const sendOtp = async(email, otp) => {
                     </tr>
                     <tr>
                       <td style="background-color: #f4f4f4; text-align: center; padding: 20px; font-size: 12px; color: #888888;">
-                        FreshMart Inc. &middot; Lagos, Nigeria<br />
-                        <a href="mailto:support@freshmart.com" style="color: #007BFF;">Contact Support</a>
+                        Koinsave Inc. &middot; Lagos, Nigeria<br />
+                        <a href="mailto:support@Koinsave.com" style="color: #007BFF;">Contact Support</a>
                       </td>
                     </tr>
                   </table>
